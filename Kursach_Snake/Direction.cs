@@ -36,7 +36,7 @@ namespace Kursach_Snake
             return HashCode.Combine(RowOffset, ColumnOffset);
         }
 
-        public static bool operator ==(Direction left, Direction right)
+        public static bool operator == (Direction left, Direction right)
         {
             return EqualityComparer<Direction>.Default.Equals(left, right);
         }
